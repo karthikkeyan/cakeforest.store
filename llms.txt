@@ -26,6 +26,22 @@ Cake Forest is a beloved local bakery known for its handcrafted cakes and warm s
 
 A photo gallery of 31 product photographs is available at https://cakeforest.store/gallery.html — covering birthday cakes, special cakes, pastries, and desserts.
 
+## Customer Reviews
+
+The homepage features five 5-star Google reviews from verified customers:
+
+- prabakar jayabal: "I had a wonderful experience at Cake Forest. The cakes are absolutely delicious, with rich flavors and a perfect texture. I tried the Black Forest and it was fantastic & just Rs 400 only. The staff was friendly, and the shop itself had a cozy vibe. Highly recommend!"
+- Mani Kandan: "Ordered choco butterscotch birthday cake — taste really awesome, delivered at right time."
+- Akash: "Recently bought a tres leches cake from the shop. Really good in taste and polite behaviour from staff."
+- Sathis Kumar: "All products are good in quality and especially love their rasamalai cakes."
+- Nanthini Kumari: "Great quality of food and awesome ambience."
+
+All reviews sourced from Google Maps. Full listing: https://www.google.com/maps/place/Cake+Forest/@9.9404818,78.1483799,21z
+
+## Location Map
+
+An embedded Google Maps widget on the homepage shows the exact store location at No. 14, Fruit Market Shopping Complex, Melur Main Road, KK Nagar, Madurai (coordinates: 9.9404823, 78.1486181).
+
 ## Menu Highlights
 
 - Birthday Cakes — from ₹400
