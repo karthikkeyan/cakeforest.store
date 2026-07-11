@@ -1,0 +1,97 @@
+{
+  "categories": [
+    {
+      "id": "birthday-cakes",
+      "name": "Birthday Cakes",
+      "image": "images/black-forest-cake.avif",
+      "itemCount": 7,
+      "priceFrom": 400
+    },
+    {
+      "id": "special-cakes",
+      "name": "Special Cakes",
+      "image": "images/yummy-truffle-cake.avif",
+      "itemCount": 7,
+      "priceFrom": 400
+    },
+    {
+      "id": "pastries",
+      "name": "Pastries",
+      "image": "images/butterscotch-pastry.avif",
+      "itemCount": 5,
+      "priceFrom": 77
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "image": "images/tiramisu.jpg.avif",
+      "itemCount": 5,
+      "priceFrom": 60
+    }
+  ],
+  "featured": [
+    {
+      "id": "black-forest-cake",
+      "name": "Black Forest Cake",
+      "description": "Rich chocolate sponge, velvety cream, luscious cherries. A celebration classic.",
+      "price": 400,
+      "priceDisplay": "₹400",
+      "image": "images/black-forest-cake.avif",
+      "category": "birthday-cakes"
+    },
+    {
+      "id": "yummy-truffle-cake",
+      "name": "Yummy Truffle Cake",
+      "description": "Deep chocolate truffle layers with a silky ganache finish.",
+      "price": 460,
+      "priceDisplay": "₹460",
+      "image": "images/yummy-truffle-cake.avif",
+      "category": "special-cakes"
+    },
+    {
+      "id": "blue-citrus",
+      "name": "Blue Citrus",
+      "description": "A striking special cake with bold citrus notes and stunning blue tones.",
+      "price": 400,
+      "priceDisplay": "₹400",
+      "image": "images/blue-citrus.jpg.avif",
+      "category": "special-cakes"
+    },
+    {
+      "id": "kulfi-almond",
+      "name": "Kulfi Almond",
+      "description": "Inspired by the beloved Indian frozen dessert — almond-kissed and creamy.",
+      "price": 400,
+      "priceDisplay": "₹400",
+      "image": "images/kulfi-almond.jpg.avif",
+      "category": "special-cakes"
+    },
+    {
+      "id": "tiramisu",
+      "name": "Tiramisu",
+      "description": "Coffee-soaked layers with mascarpone cream. An Italian classic, Madurai-made.",
+      "price": 70,
+      "priceDisplay": "₹70",
+      "image": "images/tiramisu.jpg.avif",
+      "category": "desserts"
+    },
+    {
+      "id": "rich-plum-cake",
+      "name": "Rich Plum Cake",
+      "description": "Slow-baked with fruits and spices. A gift worth giving, any time of year.",
+      "price": 150,
+      "priceDisplay": "From ₹150",
+      "image": "images/rich-plum-50grm.avif",
+      "category": "special-cakes"
+    }
+  ],
+  "marquee": [
+    "Birthday Cakes",
+    "Pastries",
+    "Special Cakes",
+    "Berliner Doughnuts",
+    "Cookies",
+    "Desserts",
+    "Rich Plum Cakes"
+  ]
+}
