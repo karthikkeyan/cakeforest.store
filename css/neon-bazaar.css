@@ -526,6 +526,27 @@ html[data-theme="night"] .map-section iframe {
   filter: brightness(0.78) saturate(0.8);
 }
 
+/* ── ITEM PAGE ── */
+html[data-theme="night"] .item-page { margin-top: 64px; }
+html[data-theme="night"] .item-page-hero { min-height: calc(100vh - 64px); }
+html[data-theme="night"] .item-page-body { background: var(--void); }
+html[data-theme="night"] .item-page-eyebrow {
+  color: var(--cyan); text-shadow: 0 0 10px rgba(0,229,211,0.5);
+}
+html[data-theme="night"] .item-page-name {
+  font-family: 'Exo 2', sans-serif; font-weight: 200; color: var(--ghost);
+}
+html[data-theme="night"] .item-page-desc { color: var(--dim); }
+html[data-theme="night"] .item-page-price {
+  font-family: 'Exo 2', sans-serif; font-weight: 300;
+  color: var(--amber); text-shadow: 0 0 24px rgba(255,149,0,0.4);
+}
+html[data-theme="night"] .item-page-back { color: var(--dim); }
+html[data-theme="night"] .item-page-back:hover { color: var(--ghost); }
+html[data-theme="night"] .item-whatsapp.item-page-order {
+  border-color: rgba(255,245,230,0.25);
+}
+
 @media (max-width: 900px) {
   html[data-theme="night"] nav { padding: 0 24px; }
   html[data-theme="night"] .nav-links { position: static; transform: none; display: none; }
