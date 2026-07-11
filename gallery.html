@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Cake Forest</title>
+  <meta name="description" content="Photo gallery of cakes, pastries, and desserts from Cake Forest, KK Nagar, Madurai.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cakeforest.store/gallery.html">
+  <meta property="og:title" content="Gallery — Cake Forest">
+  <meta property="og:description" content="Handcrafted cakes, pastries, and desserts baked fresh daily in KK Nagar, Madurai.">
+  <meta property="og:image" content="https://cakeforest.store/images/hero-image.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://cakeforest.store/gallery.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=1">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1B3528">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cake Forest">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Early theme detection -->
+  <script>
+    (function () {
+      var param = new URLSearchParams(location.search).get('theme');
+      var h = new Date().getHours();
+      var theme = (param === 'night' || param === 'day') ? param : (h >= 6 && h < 20 ? 'day' : 'night');
+      document.documentElement.setAttribute('data-theme', theme);
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', theme === 'night' ? '#090406' : '#1B3528');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/neon-bazaar.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="js/gallery.js"></script>
+</body>
+</html>

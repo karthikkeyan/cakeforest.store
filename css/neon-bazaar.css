@@ -409,10 +409,95 @@ html[data-theme="night"] .footer-links a:hover {
   color: var(--cyan); text-shadow: 0 0 8px var(--cyan);
 }
 
+/* ── HAMBURGER (night) ── */
+html[data-theme="night"] .nav-hamburger span { background: var(--ghost); }
+
+/* ── NAV ACTIVE (night) ── */
+html[data-theme="night"] .nav-links a.nav-active {
+  color: var(--cyan); text-shadow: 0 0 8px var(--cyan);
+}
+
+/* ── GALLERY PAGE (night) ── */
+html[data-theme="night"] .nb-gallery-header {
+  margin-top: 64px;
+  padding: 64px 56px 52px;
+  border-bottom: 1px solid rgba(191,90,242,0.2);
+}
+html[data-theme="night"] .nb-gallery-count {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.28em;
+  text-transform: uppercase; color: var(--dim);
+  margin-bottom: 16px;
+}
+html[data-theme="night"] .nb-gallery-title {
+  font-size: clamp(36px, 5vw, 64px); font-weight: 800;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--purple);
+  text-shadow:
+    0 0 7px rgba(191,90,242,0.9),
+    0 0 21px rgba(191,90,242,0.5),
+    0 0 56px rgba(191,90,242,0.2);
+}
+
+html[data-theme="night"] .nb-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px; padding: 2px;
+}
+html[data-theme="night"] .nb-gallery-item {
+  position: relative; overflow: hidden; cursor: pointer;
+  aspect-ratio: 1 / 1;
+  background: #0D0508;
+}
+html[data-theme="night"] .nb-gallery-item::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 3;
+  border: 1px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  pointer-events: none;
+}
+html[data-theme="night"] .nb-gallery-item:hover::before {
+  border-color: var(--neon, var(--pink));
+  box-shadow: 0 0 10px var(--neon, var(--pink)), inset 0 0 10px rgba(255,45,120,0.08);
+}
+html[data-theme="night"] .nb-gallery-item img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: brightness(0.6) saturate(0.7);
+  transition: filter 0.4s, transform 0.4s;
+}
+html[data-theme="night"] .nb-gallery-item:hover img {
+  filter: brightness(0.92) saturate(1.1);
+  transform: scale(1.05);
+}
+html[data-theme="night"] .nb-gallery-overlay {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+  padding: 16px 14px;
+  background: linear-gradient(to top, rgba(9,4,6,0.9) 0%, transparent 100%);
+  opacity: 0; transition: opacity 0.3s;
+}
+html[data-theme="night"] .nb-gallery-item:hover .nb-gallery-overlay { opacity: 1; }
+html[data-theme="night"] .nb-gallery-name {
+  font-size: 13px; font-weight: 600; color: var(--ghost);
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   html[data-theme="night"] nav { padding: 0 24px; }
   html[data-theme="night"] .nav-links { position: static; transform: none; display: none; }
+  html[data-theme="night"] .nav-cta { display: none; }
+  html[data-theme="night"] nav.nav-open .nav-links {
+    display: flex !important; flex-direction: column; gap: 0;
+    position: absolute; top: 64px; left: 0; right: 0; z-index: 99;
+    background: rgba(9,4,6,0.97); backdrop-filter: blur(12px);
+    padding: 8px 24px 24px;
+    border-top: 1px solid rgba(255,45,120,0.15);
+    transform: none;
+  }
+  html[data-theme="night"] nav.nav-open .nav-links a {
+    display: block; padding: 14px 0;
+    font-size: 14px; letter-spacing: 0.12em;
+    border-bottom: 1px solid rgba(255,245,230,0.06);
+  }
+  html[data-theme="night"] nav.nav-open .nav-links li:last-child a { border-bottom: none; }
   html[data-theme="night"] .nb-hero { padding: 80px 24px 48px; }
   html[data-theme="night"] .nb-products { padding: 56px 24px; }
   html[data-theme="night"] .nb-products.no-top { padding-top: 0; }
@@ -423,4 +508,13 @@ html[data-theme="night"] .footer-links a:hover {
   html[data-theme="night"] .nb-about-left { border-right: none; border-bottom: 1px solid rgba(0,229,211,0.2); padding: 40px; }
   html[data-theme="night"] .nb-about-right { padding: 40px; }
   html[data-theme="night"] footer { flex-direction: column; gap: 20px; padding: 32px 24px; text-align: center; }
+  html[data-theme="night"] .nb-gallery-header { padding: 48px 24px 36px; }
+  html[data-theme="night"] .nb-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (hover: none) {
+  html[data-theme="night"] .nb-gallery-item img {
+    filter: brightness(0.92) saturate(1);
+  }
+  html[data-theme="night"] .nb-gallery-overlay { opacity: 1; }
 }

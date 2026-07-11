@@ -1,9 +1,7 @@
 (function () {
   function getTheme() {
-    // Dev override: ?theme=night or ?theme=day in the URL
     var param = new URLSearchParams(location.search).get('theme');
     if (param === 'night' || param === 'day') return param;
-
     var h = new Date().getHours();
     return (h >= 6 && h < 20) ? 'day' : 'night';
   }
@@ -12,12 +10,6 @@
     document.documentElement.setAttribute('data-theme', theme);
     var m = document.querySelector('meta[name="theme-color"]');
     if (m) m.setAttribute('content', theme === 'night' ? '#090406' : '#1B3528');
-  }
-
-  function scrollToHash() {
-    if (!location.hash) return;
-    var target = document.querySelector(location.hash);
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function setupHamburger() {
@@ -37,12 +29,11 @@
   }
 
   function loadPartial(theme) {
-    fetch('partials/' + theme + '.html')
+    fetch('partials/' + theme + '-gallery.html')
       .then(function (r) { return r.text(); })
       .then(function (html) {
         document.getElementById('root').innerHTML = html;
         setupHamburger();
-        scrollToHash();
       });
   }
 
@@ -50,7 +41,6 @@
   applyTheme(currentTheme);
   loadPartial(currentTheme);
 
-  // Auto-switch at the theme boundary (6 AM / 8 PM) — only when not overridden
   setInterval(function () {
     var t = getTheme();
     if (t !== currentTheme) {
