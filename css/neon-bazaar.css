@@ -547,6 +547,22 @@ html[data-theme="night"] .item-whatsapp.item-page-order {
   border-color: rgba(255,245,230,0.25);
 }
 
+/* ── NIGHT MENU ORDER CTA ── */
+html[data-theme="night"] .nb-menu-order {
+  text-align: center;
+  margin-top: 40px;
+}
+html[data-theme="night"] .nb-order-cta {
+  color: var(--cyan); border-color: var(--cyan);
+  font-weight: 800; letter-spacing: 0.18em; padding: 14px 32px;
+  box-shadow: 0 0 8px rgba(0,229,211,0.25), inset 0 0 8px rgba(0,229,211,0.05);
+}
+html[data-theme="night"] .nb-order-cta:hover {
+  background: transparent; color: var(--cyan); border-color: var(--cyan);
+  box-shadow: 0 0 20px rgba(0,229,211,0.5), inset 0 0 16px rgba(0,229,211,0.1);
+}
+html[data-theme="night"] .nb-order-cta:hover img { filter: none; }
+
 @media (max-width: 900px) {
   html[data-theme="night"] nav { padding: 0 24px; }
   html[data-theme="night"] .nav-links { position: static; transform: none; display: none; }
