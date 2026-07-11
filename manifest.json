@@ -1,0 +1,17 @@
+{
+  "name": "Cake Forest",
+  "short_name": "Cake Forest",
+  "description": "Handcrafted cakes, pastries & desserts in KK Nagar, Madurai. Open daily 9:15 AM – 11 PM.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FAF6ED",
+  "theme_color": "#1B3528",
+  "icons": [
+    {
+      "src": "images/logo.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
