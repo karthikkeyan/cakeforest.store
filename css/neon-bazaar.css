@@ -526,6 +526,16 @@ html[data-theme="night"] .map-section iframe {
   filter: brightness(0.78) saturate(0.8);
 }
 
+/* ── MENU PAGE ── */
+html[data-theme="night"] .menu-page { margin-top: 64px; }
+html[data-theme="night"] .menu-page-header {
+  background: var(--void);
+}
+html[data-theme="night"] .menu-page-header .section-label { color: var(--cyan); }
+html[data-theme="night"] .menu-page-header .section-title {
+  font-family: 'Exo 2', sans-serif; font-weight: 200; color: var(--ghost);
+}
+
 /* ── ITEM PAGE ── */
 html[data-theme="night"] .item-page { margin-top: 64px; }
 html[data-theme="night"] .item-page-hero { min-height: calc(100vh - 64px); }

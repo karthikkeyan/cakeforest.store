@@ -206,6 +206,7 @@ nav {
 }
 
 .category-card {
+  display: block; text-decoration: none; color: inherit;
   position: relative; overflow: hidden; cursor: pointer;
   aspect-ratio: 3/4;
 }
@@ -531,6 +532,15 @@ nav.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rota
   border: 0;
 }
 
+/* ── MENU PAGE ── */
+.menu-page { margin-top: 72px; }
+.menu-page-header {
+  padding: 64px 64px 48px;
+  background: var(--ivory);
+}
+.menu-page-header .section-title { color: var(--forest); }
+.menu-section-divider { border-top: 1px solid rgba(139,174,126,0.15); }
+
 /* ── ITEM PAGE ── */
 .item-page { margin-top: 72px; }
 .item-page-hero {
@@ -598,6 +608,7 @@ nav.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rota
   .about-inner { grid-template-columns: 1fr; }
   .info-strip { grid-template-columns: 1fr; padding: 40px 24px; gap: 32px; }
   footer { flex-direction: column; gap: 24px; padding: 32px 24px; text-align: center; }
+  .menu-page-header { padding: 48px 24px 36px; }
   .gallery-page-header { padding: 48px 24px 36px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .reviews-section { padding: 56px 0 48px; }
