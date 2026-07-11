@@ -10,7 +10,7 @@
   --mist:    #E8E4D9;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
