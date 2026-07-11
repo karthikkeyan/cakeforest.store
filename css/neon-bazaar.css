@@ -480,6 +480,52 @@ html[data-theme="night"] .nb-gallery-name {
 }
 
 /* ── RESPONSIVE ── */
+/* ── NB REVIEWS ── */
+html[data-theme="night"] .reviews-section {
+  background: #0d080f;
+}
+html[data-theme="night"] .reviews-heading {
+  color: var(--cyan);
+  text-shadow: 0 0 20px rgba(0,229,211,0.45);
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+html[data-theme="night"] .review-card {
+  background: rgba(255,245,230,0.04);
+  border: 1px solid rgba(255,245,230,0.1);
+  box-shadow: none;
+}
+html[data-theme="night"] .review-name { color: var(--ghost); }
+html[data-theme="night"] .review-text { color: rgba(255,245,230,0.72); }
+html[data-theme="night"] .review-date { color: rgba(255,245,230,0.4); }
+html[data-theme="night"] .review-source { color: rgba(255,245,230,0.28); }
+html[data-theme="night"] .review-stars { color: var(--amber); }
+html[data-theme="night"] .review-card:nth-child(1) .review-avatar { background: var(--pink); color: #fff; }
+html[data-theme="night"] .review-card:nth-child(2) .review-avatar { background: var(--cyan); color: var(--void); }
+html[data-theme="night"] .review-card:nth-child(3) .review-avatar { background: var(--amber); color: var(--void); }
+html[data-theme="night"] .review-card:nth-child(4) .review-avatar { background: var(--green); color: var(--void); }
+html[data-theme="night"] .review-card:nth-child(5) .review-avatar { background: var(--purple); color: #fff; }
+html[data-theme="night"] .reviews-cta {
+  color: var(--cyan);
+  border-color: rgba(0,229,211,0.6);
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+html[data-theme="night"] .reviews-cta:hover {
+  background: var(--cyan);
+  color: var(--void);
+  box-shadow: 0 0 16px rgba(0,229,211,0.4);
+}
+
+/* ── NB MAP ── */
+html[data-theme="night"] .map-section iframe {
+  filter: brightness(0.78) saturate(0.8);
+}
+
 @media (max-width: 900px) {
   html[data-theme="night"] nav { padding: 0 24px; }
   html[data-theme="night"] .nav-links { position: static; transform: none; display: none; }
